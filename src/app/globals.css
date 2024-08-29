@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    user-select: none;
+    font-family: "Ubuntu", sans-serif !important;
+}
+
+body {
+    background-color: #d6d6d669;
+}
+
+/* styles/globals.css */
+.masonry {
+    column-count: 3;
+    /* Number of columns */
+    column-gap: 1rem;
+    /* Gap between columns */
+}
+
+.masonry-item {
+    break-inside: avoid;
+    /* Prevent items from breaking inside columns */
+    margin-bottom: 1rem;
+    /* Space between items */
+}
